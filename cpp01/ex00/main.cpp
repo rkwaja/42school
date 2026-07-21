@@ -6,7 +6,7 @@
 /*   By: rkhwaja <rkhwaja@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/20 15:33:33 by rkhwaja           #+#    #+#             */
-/*   Updated: 2026/07/20 18:54:13 by rkhwaja          ###   ########.fr       */
+/*   Updated: 2026/07/21 13:06:02 by rkhwaja          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 int main ()
 {
-	randomChump( "razan" );
-	Zombie *N = newZombie("roze");
-	std:: cout << N->name;
-
+	Zombie	*zombie;
+	
+	randomChump("The Stack \U0001f9df");
+	zombie = newZombie("The Heap \U0001f9df");
+	zombie-> announce();
+	delete (zombie);
 }

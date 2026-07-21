@@ -6,7 +6,7 @@
 /*   By: rkhwaja <rkhwaja@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/20 15:33:46 by rkhwaja           #+#    #+#             */
-/*   Updated: 2026/07/20 18:47:22 by rkhwaja          ###   ########.fr       */
+/*   Updated: 2026/07/21 13:11:58 by rkhwaja          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <iostream>
 
-
 class Zombie
 {
 	private:
@@ -23,8 +22,11 @@ class Zombie
 	
 	public:
 	Zombie(std::string name);
+	~Zombie();
+	
 	void	set_name(std::string name);
 	std::string	get_name() const;
+	
 	void	announce( void );
 	
 };
